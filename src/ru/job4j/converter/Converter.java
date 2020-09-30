@@ -18,6 +18,5 @@ public class Converter {
         int dollar = Converter.rubleToDollar(180);
         System.out.println("180 rubles are " + dollar + " dollars.");
 
-
     }
 }
