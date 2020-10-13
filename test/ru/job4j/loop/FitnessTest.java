@@ -10,7 +10,7 @@ public class FitnessTest {
     @Test
     public void whenIvanGreatNik() {
         int month = Fitness.calc(95, 90);
-        assertThat(month, is(1));
+        assertThat(month, is(0));
     }
 
     @Test
@@ -23,5 +23,11 @@ public class FitnessTest {
     public void whenIvanLessByFewNik() {
         int month = Fitness.calc(50, 90);
         assertThat(month, is(2));
+    }
+
+    @Test
+    public void whenIvanEqualNik() {
+        int month = Fitness.calc(90, 90);
+        assertThat(month, is(1));
     }
 }
