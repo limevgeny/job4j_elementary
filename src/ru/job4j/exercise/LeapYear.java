@@ -1,4 +1,4 @@
-package ru.job4j.condition;
+package ru.job4j.exercise;
 
 public class LeapYear {
     public static boolean checkYear(int year) {
