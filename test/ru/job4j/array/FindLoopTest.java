@@ -23,4 +23,13 @@ public class FindLoopTest {
         int expect = 2;
         assertThat(result, is(expect));
     }
+
+    @Test
+    public void whenArrayHas8ThenMinus1() {
+        int[] input = {2, 9, 0, 3};
+        int value = 8;
+        int result = FindLoop.indexOf(input, value);
+        int expect = 1;
+        assertThat(result, is(expect));
+    }
 }
